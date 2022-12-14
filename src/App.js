@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./App.css";
+import NasaPhoto from './Components/NasaPhoto'
 
 const dummyData = {
   date: "2022-12-14",
@@ -22,10 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <NasaPhoto photo={data} />
     </div>
   );
 }

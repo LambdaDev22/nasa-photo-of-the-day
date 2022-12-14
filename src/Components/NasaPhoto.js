@@ -9,7 +9,12 @@ const dummyData = {
 
 const NasaPhoto = (props) => {
     return (
-
+        <div className='nasa-photo-wrapper'>
+            <h2>{props.photo.title}</h2>
+            <p>{props.photo.date}</p>
+            <img src={props.photo.hdurl} />
+            <p>{props.photo.explanation}</p>
+        </div>
     )
 }
 
